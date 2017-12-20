@@ -1,0 +1,16 @@
+<header>
+  <div class="wp clearfix">
+    <div class="logo fl"><a href="/"><img src="/skin/images/logo.png" alt="{dede:global.cfg_webname/}" /></a></div>
+    <nav class="fr">
+      <ul>
+        <li><a href="/">首页</a></li>
+        {dede:channel type='top' row='10' currentstyle="
+        <li class='current'><a href='~typelink~' ~rel~><span>~typename~</span></a></li>
+        "}
+        <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+        {/dede:channel}
+      </ul>
+    </nav>
+    <div class="tel" style=" position:relative; width:200px; float:right; top:-65px;font-size:16px; color:#767676;">咨询热线：{dede:global.cfg_rx/}</div>
+  </div>
+</header>

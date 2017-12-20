@@ -1,0 +1,44 @@
+<?php
+$z[0]=Array("global","",640,666);
+$z[0][4]['name']="cfg_webname";
+$z[1]=Array("global","",710,740);
+$z[1][4]['name']="cfg_description";
+$z[2]=Array("global","",777,804);
+$z[2][4]['name']="cfg_keywords";
+$z[3]=Array("global","",894,919);
+$z[3][4]['name']="cfg_cmsurl";
+$z[4]=Array("global","",1485,1511);
+$z[4][4]['name']="cfg_webname";
+$z[5]=Array("channel","\r\n        <li><a href=\"[field:typeurl/]\">[field:typename/]</a></li>\r\n        ",1626,1865);
+$z[5][4]['type']="top";
+$z[5][4]['row']="10";
+$z[5][4]['currentstyle']="<li class='hover'><a href='~typelink~' ~rel~><span>~typename~</span></a></li>";
+$z[6]=Array("global","",2023,2044);
+$z[6][4]['name']="cfg_rx";
+$z[7]=Array("type"," <a href=\"[field:typelink/]\" target=\"_blank\">产品系列</a>",3323,3418);
+$z[7][4]['typeid']="8";
+$z[8]=Array("type"," <a href=\"[field:typelink/]\">Learn More</a>",3904,3981);
+$z[8][4]['typeid']="9";
+$z[9]=Array("type"," <a href=\"[field:typelink/]\">Learn More</a>",4257,4335);
+$z[9][4]['typeid']="10";
+$z[10]=Array("type"," <a href=\"[field:typelink/]\">Learn More</a>",4649,4727);
+$z[10][4]['typeid']="11";
+$z[11]=Array("type"," <a href=\"[field:typelink/]\">Learn More</a>",5053,5131);
+$z[11][4]['typeid']="12";
+$z[12]=Array("sql"," \r\n            [field:content  function='cn_substr(html2text(@me),660)'/]...\r\n            ",5471,5632);
+$z[12][4]['sql']="Select content from dede_arctype where id=5";
+$z[13]=Array("sql"," \r\n            [field:content  function='cn_substr(html2text(@me),660)'/]...\r\n            ",5877,6038);
+$z[13][4]['sql']="Select content from dede_arctype where id=2";
+$z[14]=Array("type"," <a href=\"[field:typelink/]\" target=\"_blank\">妮儿格林运营品牌</a>",6174,6281);
+$z[14][4]['typeid']="6";
+$z[15]=Array("type"," <a href=\"[field:typelink/]\" target=\"_blank\">活动与新闻</a>",7995,8094);
+$z[15][4]['typeid']="14";
+$z[16]=Array("arclist","\r\n      <li> <a href=\"[field:arcurl/]\"> <b class=\"imgbox\"><img src=\"[field:picname/]\" alt=\"[field:title/]\" /> <span><i>[field:pubdate function=\"MyDate('d',@me)\"/]</i><br />\r\n        [field:pubdate function=\"MyDate('Y/m',@me)\"/]</span> </b>\r\n        <p class=\"tit\">[field:title/]</p>\r\n        <p class=\"cont\">[field:info/]...</p>\r\n        <i class=\"more\">Learn More</i> </a> </li>\r\n      ",8273,8737);
+$z[16][4]['typeid']="14";
+$z[16][4]['row']="3";
+$z[16][4]['titlelen']="60";
+$z[16][4]['infolen']="200";
+$z[17]=Array("include","",8772,8809);
+$z[17][4]['filename']="footer.htm";
+
+?>

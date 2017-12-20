@@ -1,0 +1,1 @@
+<a href="[field:typelink/]" target="_blank">产品系列</a>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=1024" />
+<meta name="author" content="ruifox" />
+<meta name="baidu-site-verification" content="SZShUaqCLD" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link rel="stylesheet" href="/skin/css/css.css" />
+<link rel="shortcut icon" href="{dede:global.cfg_cmsurl/}/favicon.ico" type="image/x-icon" />
+<script type="text/javascript"src="/skin/js/respond.js"></script>
+<script type="text/javascript"src="/skin/js/domassistantcompressed-2.8.1.js"></script>
+<script type="text/javascript"src="/skin/js/ie-css3.js"></script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<section id="insnav1" class="insnav" style="background:url('/skin/images/20140808054613974.png') center center; ">
+  <div class="wp">
+    <h2>{dede:field name='typeid' function="GetTopTypename(@me)"/}</h2>
+  </div>
+</section>
+<section id="miancont" class="wp clearfix">
+  <aside class="fl"> </aside>
+  <article class="fr mainright"> <!--单页right-->
+    <h3 id="thrdtit">商务政策</h3>
+    <section id="rightdetals" class="">
+      <form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+        <input type="hidden" name="action" value="post" />
+        <input type="hidden" name="diyid" value="1" />
+        <input type="hidden" name="do" value="2" />
+        <div class="whelearn">
+          <p>你是从哪里了解到可以成为妮儿格林经销商机会的?</p>
+          <input id="whelea" name="whelearn" type="hidden" value="网络" />
+        </div>
+        <div class="fminpt">
+          <p>公司名称:</p>
+          <input type="text" name="mc" />
+          <span class="chexout">(必填)</span> </div>
+        <div class="fminpt">
+          <p>公司地址:</p>
+          <input type="text" name="dz" />
+          <span class="chexout">(必填)</span> </div>
+        <div class="fminpt">
+          <p>联系人:</p>
+          <input type="text" name="name" />
+          <span class="chexout">(必填)</span> </div>
+        <div class="fminpt">
+          <p>职位:</p>
+          <input type="text" name="zw" />
+          <span class="chexout">(必填)</span> </div>
+        <div class="fminpt">
+          <p>联系电话:</p>
+          <input type="text" name="tel" />
+          <span class="chexout">(必填)</span> </div>
+        <div class="fminpt">
+          <p>EMAIL:</p>
+          <input type="text" name="email" />
+          <span class="chexout">(必填)</span> </div>
+        <div class="fminpt area">
+          <p>详情描述:</p>
+          <textarea name="nr" id="" cols="30" rows="10"></textarea>
+          <span class="chexout">(必填)</span> </div>
+        <input type="hidden" name="dede_fields" value="mc,text;dz,text;name,text;zw,text;tel,text;email,text;nr,text" />
+        <input type="hidden" name="dede_fieldshash" value="78b3edf5b299033634ac7cc545f88857" />
+        <div class="handon">
+          <input type="submit" name="submit" value="提交"/>
+          <span class="chexout"></span></div>
+      </form>
+    </section>
+  </article>
+</section>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

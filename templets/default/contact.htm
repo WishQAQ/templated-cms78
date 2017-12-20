@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=1024" />
+<meta name="author" content="ruifox" />
+<meta name="baidu-site-verification" content="SZShUaqCLD" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link rel="stylesheet" href="/skin/css/css.css" />
+<link rel="shortcut icon" href="{dede:global.cfg_cmsurl/}/favicon.ico" type="image/x-icon" />
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="/skin/js/html5.js"></script>
+	<![endif]-->
+<!--[if IE 6]>
+	<script src="/skin/js/zh_cn.js"></script>
+<![endif]-->
+<script type="text/javascript"src="/skin/js/respond.js"></script>
+<script type="text/javascript"src="/skin/js/domassistantcompressed-2.8.1.js"></script>
+<script type="text/javascript"src="/skin/js/ie-css3.js"></script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<section id="insnav1" class="insnav" style="background:url('/skin/images/20140808055130252.png') center center; ">
+  <div class="wp">
+    <h2>{dede:field name='typeid' function="GetTopTypename(@me)"/}</h2>
+  </div>
+</section>
+<section id="miancont" class="wp clearfix">
+  <aside class="fl">
+    <ul>
+      {dede:channel type='son' currentstyle="
+      <li class='current'><a href='~typelink~'>~typename~</a></li>
+      "}
+      <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+      {/dede:channel}
+    </ul>
+  </aside>
+  <article class="fr mainright contacts"> <!--单页right-->
+    <section id="rightdetals" class="">
+      <h3>{dede:field name='typename'/}</h3>
+      <div class="desp clearfix">
+        <p class="fl tl"><i></i>公司地址：海南省海口市国贸玉沙路金城国际大厦D座88室</p>
+        <p class="fl"><i></i>客服电话：400-8899-997  13976785548 唐经理 13946585562 代经理  QQ:329435596 </p>
+        <p class="fl"><i></i>监督电话：0898-68736925 </p>
+        <p class="fl"><i></i>传 真：0898-68365948 </p>
+      </div>
+      <div class="weiboqq" style="text-align:center;"> <a href="http://weibo.com/" title="官方微博"></a> <a class="tqq" href="javascript:;" title="微信关注"></a> <a href="http://wpa.qq.com/msgrd?v=3&uin={dede:global.cfg_qq/}&site=qq&menu=yes" title="在线咨询"></a> </div>
+    </section>
+  </article>
+</section>
+<section id="map"></section>
+{dede:include filename="footer.htm"/} 
+
+</body>
+</html>

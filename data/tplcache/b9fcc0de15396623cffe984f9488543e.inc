@@ -1,0 +1,1 @@
+<a href="[field:typelink/]" target="_blank">活动与新闻</a>
